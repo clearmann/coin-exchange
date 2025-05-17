@@ -3,11 +3,11 @@ package logic
 import (
 	"context"
 
-	"looklook/app/usercenter/cmd/rpc/internal/svc"
-	"looklook/app/usercenter/cmd/rpc/pb"
-	"looklook/app/usercenter/cmd/rpc/usercenter"
-	"looklook/app/usercenter/model"
-	"looklook/pkg/xerr"
+	"coin-exchange/app/usercenter/cmd/rpc/internal/svc"
+	"coin-exchange/app/usercenter/cmd/rpc/pb"
+	"coin-exchange/app/usercenter/cmd/rpc/usercenter"
+	"coin-exchange/app/usercenter/model"
+	"coin-exchange/pkg/xerr"
 
 	"github.com/jinzhu/copier"
 	"github.com/pkg/errors"

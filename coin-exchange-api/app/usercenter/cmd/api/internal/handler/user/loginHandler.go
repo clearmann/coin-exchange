@@ -3,10 +3,10 @@ package user
 import (
 	"net/http"
 
-	"looklook/app/usercenter/cmd/api/internal/logic/user"
-	"looklook/app/usercenter/cmd/api/internal/svc"
-	"looklook/app/usercenter/cmd/api/internal/types"
-	"looklook/pkg/result"
+	"coin-exchange/app/usercenter/cmd/api/internal/logic/user"
+	"coin-exchange/app/usercenter/cmd/api/internal/svc"
+	"coin-exchange/app/usercenter/cmd/api/internal/types"
+	"coin-exchange/pkg/result"
 
 	"github.com/zeromicro/go-zero/rest/httpx"
 )

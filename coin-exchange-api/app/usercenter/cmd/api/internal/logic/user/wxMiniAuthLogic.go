@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	"looklook/app/usercenter/cmd/api/internal/svc"
-	"looklook/app/usercenter/cmd/api/internal/types"
-	"looklook/app/usercenter/cmd/rpc/usercenter"
-	usercenterModel "looklook/app/usercenter/model"
-	"looklook/pkg/xerr"
+	"coin-exchange/app/usercenter/cmd/api/internal/svc"
+	"coin-exchange/app/usercenter/cmd/api/internal/types"
+	"coin-exchange/app/usercenter/cmd/rpc/usercenter"
+	usercenterModel "coin-exchange/app/usercenter/model"
+	"coin-exchange/pkg/xerr"
 
 	"github.com/pkg/errors"
 	wechat "github.com/silenceper/wechat/v2"

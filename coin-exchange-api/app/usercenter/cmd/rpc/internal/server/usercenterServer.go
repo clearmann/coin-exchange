@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"looklook/app/usercenter/cmd/rpc/internal/logic"
-	"looklook/app/usercenter/cmd/rpc/internal/svc"
-	"looklook/app/usercenter/cmd/rpc/pb"
+	"coin-exchange/app/usercenter/cmd/rpc/internal/logic"
+	"coin-exchange/app/usercenter/cmd/rpc/internal/svc"
+	"coin-exchange/app/usercenter/cmd/rpc/pb"
 )
 
 type UsercenterServer struct {

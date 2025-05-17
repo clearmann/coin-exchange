@@ -6,11 +6,11 @@ import (
 	"github.com/zeromicro/go-zero/core/service"
 	"google.golang.org/grpc/reflection"
 
-	"looklook/app/usercenter/cmd/rpc/internal/config"
-	"looklook/app/usercenter/cmd/rpc/internal/server"
-	"looklook/app/usercenter/cmd/rpc/internal/svc"
-	"looklook/app/usercenter/cmd/rpc/pb"
-	"looklook/pkg/interceptor/rpcserver"
+	"coin-exchange/app/usercenter/cmd/rpc/internal/config"
+	"coin-exchange/app/usercenter/cmd/rpc/internal/server"
+	"coin-exchange/app/usercenter/cmd/rpc/internal/svc"
+	"coin-exchange/app/usercenter/cmd/rpc/pb"
+	"coin-exchange/pkg/interceptor/rpcserver"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/zrpc"

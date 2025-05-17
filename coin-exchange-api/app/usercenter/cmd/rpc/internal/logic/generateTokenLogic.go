@@ -1,14 +1,14 @@
 package logic
 
 import (
+	"coin-exchange/pkg/ctxdata"
 	"context"
 	"github.com/pkg/errors"
-	"looklook/pkg/ctxdata"
 	"time"
 
+	"coin-exchange/app/usercenter/cmd/rpc/internal/svc"
+	"coin-exchange/app/usercenter/cmd/rpc/pb"
 	"github.com/golang-jwt/jwt/v4"
-	"looklook/app/usercenter/cmd/rpc/internal/svc"
-	"looklook/app/usercenter/cmd/rpc/pb"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

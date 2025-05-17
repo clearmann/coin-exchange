@@ -1,11 +1,11 @@
 package user
 
 import (
+	"coin-exchange/app/usercenter/cmd/api/internal/svc"
+	"coin-exchange/app/usercenter/cmd/api/internal/types"
+	"coin-exchange/app/usercenter/cmd/rpc/usercenter"
+	"coin-exchange/app/usercenter/model"
 	"context"
-	"looklook/app/usercenter/cmd/api/internal/svc"
-	"looklook/app/usercenter/cmd/api/internal/types"
-	"looklook/app/usercenter/cmd/rpc/usercenter"
-	"looklook/app/usercenter/model"
 
 	"github.com/jinzhu/copier"
 	"github.com/pkg/errors"

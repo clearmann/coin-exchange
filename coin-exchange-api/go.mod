@@ -1,4 +1,4 @@
-module looklook
+module coin-exchange
 
 go 1.22
 

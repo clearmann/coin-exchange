@@ -1,15 +1,15 @@
 package logic
 
 import (
+	"coin-exchange/app/usercenter/cmd/rpc/internal/svc"
+	"coin-exchange/app/usercenter/cmd/rpc/usercenter"
+	"coin-exchange/app/usercenter/model"
+	"coin-exchange/pkg/tool"
+	"coin-exchange/pkg/xerr"
 	"context"
 	"github.com/pkg/errors"
 	"github.com/zeromicro/go-zero/core/logx"
 	"github.com/zeromicro/go-zero/core/stores/sqlx"
-	"looklook/app/usercenter/cmd/rpc/internal/svc"
-	"looklook/app/usercenter/cmd/rpc/usercenter"
-	"looklook/app/usercenter/model"
-	"looklook/pkg/tool"
-	"looklook/pkg/xerr"
 )
 
 var ErrUserAlreadyRegisterError = xerr.NewErrMsg("user has been registered")

@@ -3,11 +3,13 @@ package main
 import (
 	"flag"
 	"fmt"
+
+	"coin-exchange/app/usercenter/cmd/api/internal/config"
+	"coin-exchange/app/usercenter/cmd/api/internal/handler"
+	"coin-exchange/app/usercenter/cmd/api/internal/svc"
+
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"
-	"looklook/app/usercenter/cmd/api/internal/config"
-	"looklook/app/usercenter/cmd/api/internal/handler"
-	"looklook/app/usercenter/cmd/api/internal/svc"
 )
 
 var configFile = flag.String("f", "etc/usercenter.yaml", "the config file")
