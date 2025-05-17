@@ -1,0 +1,80 @@
+{
+  "uc": {
+    "login": { "success": true, "message": "登录成功", "data": { "token": "mock-token", "username": "测试用户" } },
+    "register": { "success": true, "message": "注册成功", "data": null },
+    "announcement": { 
+      "success": true, 
+      "message": "获取成功", 
+      "data": { 
+        "content": [
+          { "id": 1, "title": "公告1", "content": "公告内容1", "createTime": "2025-05-17" },
+          { "id": 2, "title": "公告2", "content": "公告内容2", "createTime": "2025-05-16" }
+        ],
+        "totalElements": 2
+      }
+    },
+    "member": {
+      "my-info": { "success": true, "message": "获取成功", "data": { "id": 1, "username": "测试用户", "realName": "测试", "email": "test@example.com", "mobilePhone": "13800138000" } }
+    },
+    "asset": {
+      "wallet": { 
+        "success": true, 
+        "message": "获取成功", 
+        "data": [
+          { "id": 1, "coin": { "name": "BTC", "nameCn": "比特币" }, "balance": 1.5, "frozenBalance": 0.1 },
+          { "id": 2, "coin": { "name": "ETH", "nameCn": "以太坊" }, "balance": 10.0, "frozenBalance": 0.5 }
+        ]
+      }
+    }
+  },
+  "market": {
+    "symbol-thumb": {
+      "success": true,
+      "message": "获取成功",
+      "data": [
+        { "symbol": "BTC/USDT", "open": 40000, "high": 41000, "low": 39500, "close": 40500, "volume": 100, "chg": 1.25 },
+        { "symbol": "ETH/USDT", "open": 2800, "high": 2900, "low": 2750, "close": 2850, "volume": 500, "chg": 1.78 }
+      ]
+    },
+    "exchange-plate": {
+      "success": true,
+      "message": "获取成功",
+      "data": {
+        "asks": [
+          [40510, 1.5],
+          [40520, 2.3],
+          [40530, 3.1]
+        ],
+        "bids": [
+          [40490, 1.2],
+          [40480, 2.5],
+          [40470, 3.8]
+        ]
+      }
+    }
+  },
+  "exchange": {
+    "order": {
+      "current": {
+        "success": true,
+        "message": "获取成功",
+        "data": {
+          "content": [
+            { "id": 1, "symbol": "BTC/USDT", "price": 40000, "amount": 1, "direction": "BUY", "type": "LIMIT_PRICE", "status": "TRADING" }
+          ],
+          "totalElements": 1
+        }
+      },
+      "history": {
+        "success": true,
+        "message": "获取成功",
+        "data": {
+          "content": [
+            { "id": 2, "symbol": "ETH/USDT", "price": 2800, "amount": 5, "direction": "SELL", "type": "LIMIT_PRICE", "status": "COMPLETED" }
+          ],
+          "totalElements": 1
+        }
+      }
+    }
+  }
+}

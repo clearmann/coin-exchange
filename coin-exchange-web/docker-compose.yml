@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      # 开发模式下可以挂载源码目录，实现热更新
+      - ./:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - api-server
+  
+  # 使用json-server来模拟API服务
+  api-server:
+    image: node:14-alpine
+    working_dir: /api
+    volumes:
+      - ./api-mock:/api
+    ports:
+      - "6001:6001"
+      - "6003:6003"
+      - "6004:6004"
+    command: >
+      sh -c "npm install -g json-server &&
+             json-server --watch db.json --routes routes.json --host 0.0.0.0 --port 6001 --middlewares middleware.js &
+             json-server --watch db.json --routes routes.json --host 0.0.0.0 --port 6003 --middlewares middleware.js &
+             json-server --watch db.json --routes routes.json --host 0.0.0.0 --port 6004 --middlewares middleware.js"

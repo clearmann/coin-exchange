@@ -1,0 +1,13 @@
+{
+  "/uc/login": "/uc/login",
+  "/uc/register": "/uc/register",
+  "/uc/announcement/page": "/uc/announcement",
+  "/uc/member/my-info": "/uc/member/my-info",
+  "/uc/asset/wallet/*": "/uc/asset/wallet",
+  
+  "/market/symbol-thumb": "/market/symbol-thumb",
+  "/market/exchange-plate": "/market/exchange-plate",
+  
+  "/exchange/order/current": "/exchange/order/current",
+  "/exchange/order/history": "/exchange/order/history"
+}
